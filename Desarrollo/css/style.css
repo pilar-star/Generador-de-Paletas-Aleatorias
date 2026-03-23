@@ -21,23 +21,19 @@ body {
    --color-primario-transparente: hsl(0, 0%, 30%);
 }
 
-.header {
+.header, .footer {
     color: white;
     background-color: var(--color-primario-puro);
     padding: 1rem;
-}
-.header-contenido {
-    max-width: 75rem;
     margin: auto;
     text-align: center;
+    font-style: oblique;
 }
 .header-titulo {
     font-size: 4rem;
-    font-style: oblique;
 }
 .header-descripción {
     font-size: 1.10rem;
-    font-style: oblique;
 }
 
 .main {
