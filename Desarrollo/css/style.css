@@ -17,20 +17,54 @@ body {
 
 :root {
    --color-primario-puro: hsl(0, 0%, 0%);
-   --color-primario-medio: hsl(0, 0%, 10%);
+   --color-primario-medio: hsl(0, 0%, 15%);
    --color-primario-transparente: hsl(0, 0%, 30%);
-   --color-texto: hsl(40, 50%, 60%);
 }
 
 .header {
     color: white;
     background-color: var(--color-primario-puro);
     padding: 1rem;
-    box-shadow: 0 0 0 0 10px rgba(0,0,0,0.5);
 }
 .header-contenido {
     max-width: 75rem;
     margin: auto;
-    padding: 1rem;
     text-align: center;
+}
+.header-titulo {
+    font-size: 4rem;
+    font-style: oblique;
+}
+.header-descripción {
+    font-size: 1.10rem;
+    font-style: oblique;
+}
+
+.main {
+    max-width: 75rem;
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+}
+.contenedor {
+    background-color: var(--color-primario-transparente);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    border-radius: 4px;
+}
+.btn {
+    flex: auto;
+    background-color: var(--color-primario-puro);
+    color: white;
+    padding: 1rem;
+    margin: 5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
 }
