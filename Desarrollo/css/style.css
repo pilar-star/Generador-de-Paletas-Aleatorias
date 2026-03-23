@@ -55,16 +55,22 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    height: 8rem;
+    height: 6rem;
+    margin-bottom: 1.25rem;
     border-radius: 4px;
 }
-.btn {
+.generar-paleta, .btn {
     flex: auto;
     background-color: var(--color-primario-puro);
     color: white;
     padding: 1rem;
-    margin: 5rem;
-    font-size: 1.5rem;
+    margin: 4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
     cursor: pointer;
     border-radius: 10px;
+}
+.generar-paleta:hover, .btn:hover {
+    background-color: white;
+    color: var(--color-primario-puro);
 }
