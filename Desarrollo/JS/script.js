@@ -8,6 +8,7 @@ const btn10 = document.getElementById('btn10');
 const btnHSL = document.getElementById('btnHSL');
 const btnHEX = document.getElementById('btnHEX');
 let tamañoPaleta;
+let formatoColor = 'HSL';
 
 function numeroRandom (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -52,3 +53,15 @@ function boton10 () {
     console.log('Se seleccionaron 10 colores');
 }
 btn10.addEventListener('click', boton10);
+
+function botonHSL () {
+    formatoColor = 'HSL';
+    console.log('Se seleccionó formato HSL');
+}
+btnHSL.addEventListener('click', botonHSL);
+
+function botonHEX () {
+    formatoColor = 'HEX';
+    console.log('Se seleccionó formato HEX');
+}
+btnHEX.addEventListener('click', botonHEX);
