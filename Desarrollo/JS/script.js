@@ -108,3 +108,11 @@ function convertirHSLaHEX (hsl) {
     };
     return `#${f(0)}${f(8)}${f(4)}`;
 }
+
+function obtenerColorFuente (colorPaleta) {
+    let partes = colorPaleta.replace("hsl(", "").replace(")", "").replaceAll("%", "").split(",");
+    let valorLuz = parseInt(partes[2]);
+    let colorFuente = (valorLuz > 50) ? 'black' : 'white';
+    console.log('color de paleta -> '+colorPaleta+" -> color de fuente -> "+colorFuente+" -> Luminosidad -> " + valorLuz);
+    return colorFuente;
+}
