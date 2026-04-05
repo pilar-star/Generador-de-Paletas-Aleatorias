@@ -21,3 +21,9 @@ function generarHEXcolor () {
     return color;
 }
 
+function generarHSLcolor () {
+    const h = numeroRandom(0, 360);
+    const s = numeroRandom(0, 100);
+    const l = numeroRandom(0, 100);
+    return `hsl(${h}, ${s}%, ${l}%)`;
+}
