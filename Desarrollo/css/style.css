@@ -32,6 +32,9 @@ body {
 .header-titulo {
     font-size: 4rem;
 }
+.header-titulo:hover {
+    color: var(--color-primario-transparente);
+}
 .header-descripción {
     font-size: 1.10rem;
 }
@@ -69,6 +72,7 @@ body {
 .generar-paleta:hover, .btn:hover {
     background-color: white;
     color: var(--color-primario-puro);
+    transform: scale(0.8);
 }
 
 .paleta-colores {
@@ -98,6 +102,10 @@ body {
     border-radius: 8px;
     text-align: center;
     width: 150px;
+}
+.color-card:hover {
+    border-radius: 40px;
+    transform: scale(1.2);
 }
 
 .btn-activo {
