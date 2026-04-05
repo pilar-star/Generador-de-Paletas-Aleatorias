@@ -11,3 +11,13 @@ const btnHEX = document.getElementById('btnHEX');
 function numeroRandom (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+function generarHEXcolor () {
+    const letras = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letras[numeroRandom(0, letras.length - 1)];
+    }
+    return color;
+}
+
