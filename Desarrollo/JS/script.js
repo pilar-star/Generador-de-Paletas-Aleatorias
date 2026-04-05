@@ -34,3 +34,21 @@ function boton4 () {
     console.log('Se seleccionaron 4 colores');
 }
 btn4.addEventListener('click', boton4);
+
+function boton6 () {
+    tamañoPaleta = 6;
+    console.log('Se seleccionaron 6 colores');
+}
+btn6.addEventListener('click', boton6);
+
+function boton8 () {
+    tamañoPaleta = 8;
+    console.log('Se seleccionaron 8 colores');
+}
+btn8.addEventListener('click', boton8);
+
+function boton10 () {
+    tamañoPaleta = 10;
+    console.log('Se seleccionaron 10 colores');
+}
+btn10.addEventListener('click', boton10);
