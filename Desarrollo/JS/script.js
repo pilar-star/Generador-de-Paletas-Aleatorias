@@ -1,14 +1,11 @@
 console.log('¡JavaScript está funcionando!');
 
-function generarColores(numColores) {
-    const contenedor = document.getElementById("contenedor-colores");
-    contenedor.innerHTML = "";
-    for (let i = 0; i < numColores; i++) {
-        const coloresRandom = generarHEX();
-        const colorBox = document.createElement("div");
-        colorBox.className = "color-box";
-        colorBox.texto = coloresRandom;
-        contenedor.appendChild(colorBox);}
-        return generarColores
-    };
+const btnGenerar = document.getElementById('generar-paleta');
+const btn4 = document.getElementById('btn4');
+const btn6 = document.getElementById('btn6');
+const btn8 = document.getElementById('btn8');
+const btn10 = document.getElementById('btn10');
+const btnHSL = document.getElementById('btnHSL');
+const btnHEX = document.getElementById('btnHEX');
+
 
