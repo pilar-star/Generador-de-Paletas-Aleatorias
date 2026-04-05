@@ -9,6 +9,8 @@ const btnHSL = document.getElementById('btnHSL');
 const btnHEX = document.getElementById('btnHEX');
 let tamañoPaleta;
 let formatoColor = 'HSL';
+let paletaColores = [];
+let contenedorColores = document.getElementById('paleta-colores');
 
 function numeroRandom (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -57,11 +59,30 @@ btn10.addEventListener('click', boton10);
 function botonHSL () {
     formatoColor = 'HSL';
     console.log('Se seleccionó formato HSL');
+    mostrarPaleta();
 }
 btnHSL.addEventListener('click', botonHSL);
 
 function botonHEX () {
     formatoColor = 'HEX';
     console.log('Se seleccionó formato HEX');
+    mostrarPaleta();
 }
 btnHEX.addEventListener('click', botonHEX);
+
+function mostrarPaleta () {
+    contenedorColores.innerHTML = '';
+    for (let i = 0; i < tamañoPaleta; i++) {
+        const colorBox = document.createElement('div');
+        const colores = paletaColores[i];
+        if (formatoColor === 'HEX') {
+            colorBox.textContent = convertirHSLaHEX(colores);
+        } else {
+            colorBox.textContent = colores;
+        }
+        colorBox.className = 'color-card color-box';
+        colorBox.style.color = obtenerColorFuente(colores);
+        colorBox.style.backgroundColor = colores;
+        contenedorColores.appendChild(colorBox);
+    }
+}
