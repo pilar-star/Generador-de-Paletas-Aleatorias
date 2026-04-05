@@ -8,4 +8,6 @@ const btn10 = document.getElementById('btn10');
 const btnHSL = document.getElementById('btnHSL');
 const btnHEX = document.getElementById('btnHEX');
 
-
+function numeroRandom (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
