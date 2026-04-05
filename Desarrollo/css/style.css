@@ -79,3 +79,23 @@ body {
     margin-top: 2rem;
     padding-bottom: 3rem;
 }
+
+.color-box {
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+}
+.color-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+}
