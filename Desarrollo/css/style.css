@@ -99,3 +99,9 @@ body {
     text-align: center;
     width: 150px;
 }
+
+.btn-activo {
+    background-color: white !important;
+    color: var(--color-primario-puro) !important;
+    border: 2px solid var(--color-primario-puro);
+}
