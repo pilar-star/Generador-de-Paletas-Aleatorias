@@ -7,6 +7,7 @@ const btn8 = document.getElementById('btn8');
 const btn10 = document.getElementById('btn10');
 const btnHSL = document.getElementById('btnHSL');
 const btnHEX = document.getElementById('btnHEX');
+let tamañoPaleta;
 
 function numeroRandom (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -27,3 +28,9 @@ function generarHSLcolor () {
     const l = numeroRandom(0, 100);
     return `hsl(${h}, ${s}%, ${l}%)`;
 }
+
+function boton4 () {
+    tamañoPaleta = 4;
+    console.log('Se seleccionaron 4 colores');
+}
+btn4.addEventListener('click', boton4);
