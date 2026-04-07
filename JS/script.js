@@ -1,5 +1,3 @@
-console.log('¡JavaScript está funcionando!');
-
 const btnGenerar = document.getElementById('generar-paleta');
 const btn6 = document.getElementById('btn6');
 const btn8 = document.getElementById('btn8');
@@ -33,32 +31,27 @@ function generarHSLcolor () {
 
 function boton6 () {
     tamañoPaleta = 6;
-    console.log('Se seleccionaron 6 colores');
 }
 btn6.addEventListener('click', boton6);
 
 function boton8 () {
     tamañoPaleta = 8;
-    console.log('Se seleccionaron 8 colores');
 }
 btn8.addEventListener('click', boton8);
 
 function boton9 () {
     tamañoPaleta = 9;
-    console.log('Se seleccionaron 10 colores');
 }
 btn10.addEventListener('click', boton10);
 
 function botonHSL () {
     formatoColor = 'HSL';
-    console.log('Se seleccionó formato HSL');
     mostrarPaleta();
 }
 btnHSL.addEventListener('click', botonHSL);
 
 function botonHEX () {
     formatoColor = 'HEX';
-    console.log('Se seleccionó formato HEX');
     mostrarPaleta();
 }
 btnHEX.addEventListener('click', botonHEX);
@@ -106,6 +99,5 @@ function obtenerColorFuente (colorPaleta) {
     let partes = colorPaleta.replace("hsl(", "").replace(")", "").replaceAll("%", "").split(",");
     let valorLuz = parseInt(partes[2]);
     let colorFuente = (valorLuz > 50) ? 'black' : 'white';
-    console.log('color de paleta -> '+colorPaleta+" -> color de fuente -> "+colorFuente+" -> Luminosidad -> " + valorLuz);
     return colorFuente;
 }
