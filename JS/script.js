@@ -42,7 +42,7 @@ btn8.addEventListener('click', boton8);
 function boton9 () {
     tamañoPaleta = 9;
 }
-btn10.addEventListener('click', boton10);
+btn9.addEventListener('click', boton9);
 
 function botonHSL () {
     formatoColor = 'HSL';
