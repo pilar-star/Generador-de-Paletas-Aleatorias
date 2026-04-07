@@ -58,7 +58,7 @@ btnHEX.addEventListener('click', botonHEX);
 
 function mostrarPaleta () {
     contenedorColores.innerHTML = '';
-    for (let i = 0; i < tamañoPaleta; i++) {
+    for (let i = 0; i < paletaColores.length; i++) {
         const colorBox = document.createElement('div');
         const colores = paletaColores[i];
         if (formatoColor === 'HEX') {
