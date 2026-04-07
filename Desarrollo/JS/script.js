@@ -1,10 +1,9 @@
 console.log('¡JavaScript está funcionando!');
 
 const btnGenerar = document.getElementById('generar-paleta');
-const btn4 = document.getElementById('btn4');
 const btn6 = document.getElementById('btn6');
 const btn8 = document.getElementById('btn8');
-const btn10 = document.getElementById('btn10');
+const btn9 = document.getElementById('btn9');
 const btnHSL = document.getElementById('btnHSL');
 const btnHEX = document.getElementById('btnHEX');
 let tamañoPaleta;
@@ -32,12 +31,6 @@ function generarHSLcolor () {
     return `hsl(${h}, ${s}%, ${l}%)`;
 }
 
-function boton4 () {
-    tamañoPaleta = 4;
-    console.log('Se seleccionaron 4 colores');
-}
-btn4.addEventListener('click', boton4);
-
 function boton6 () {
     tamañoPaleta = 6;
     console.log('Se seleccionaron 6 colores');
@@ -50,8 +43,8 @@ function boton8 () {
 }
 btn8.addEventListener('click', boton8);
 
-function boton10 () {
-    tamañoPaleta = 10;
+function boton9 () {
+    tamañoPaleta = 9;
     console.log('Se seleccionaron 10 colores');
 }
 btn10.addEventListener('click', boton10);
