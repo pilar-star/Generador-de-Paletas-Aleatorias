@@ -10,8 +10,10 @@ De esta manera aparecerá instantáneamente una paleta con el nombre del formato
 El formato puede ser cambiado indistintamente sin que cambien los colores ni tener que tocar el botón "Generar Paleta" nuevamente.
 En caso de querer cambiar la cantidad de colores, si es necesario tocar el botón "Generar Paleta". 
 
-### Herramientas Utilizadas 🛠️
+## Herramientas Utilizadas 🛠️
 Para este proyecto fue utilizado esclusivamente Visual Studio Code para escribir el código, la consola del navegador de google para reconocer ubicaciones de problemas y el navegador de google para abrir el proyecto y obtener una previsualización a medida que se realizaban actualizaciones en el código.
+### Código
+Se utilizó HTML semántico para estructura básica y accesible, CSS para estilo y JavaScript como lenguaje para generar interacción y manipulación del DOM.
 
 ## Despliegue 📢
 En el siguiente link se encuentra la página desplegada con GitHub Pages
